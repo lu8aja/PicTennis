@@ -1,0 +1,41 @@
+
+
+
+#Backup Files
+.LOCAL/
+BKP*.*
+Ignore *.*
+Copy of *.*
+boards/*.b#[0-9]
+boards/*.s#[0-9]
+Backups
+
+# gitignore for MPLAB X projects https://gist.github.com/zeha/5999375
+firmware/MPLAB.X/build/
+firmware/MPLAB.X/debug/
+firmware/MPLAB.X/dist/
+firmware/MPLAB.X/nbdist/
+firmware/MPLAB.X/nbbuild/*
+firmware/MPLAB.X/nbbuild/nbproject/private/*
+firmware/MPLAB.X/nbbuild/nbproject/Package-*.bash
+firmware/MPLAB.X/nbproject/private/*
+firmware/MPLAB.X/nbactions.xml
+firmware/MPLAB.X/nb-configuration.xml
+firmware/MPLAB.X/funclist
+firmware/MPLAB.X/nbproject/Makefile-*
+firmware/MPLAB.X/disassembly/
+*.map
+*.i
+*.d
+*.pre
+*.p1
+*.lst
+*.sym
+*.obj
+*.o
+*.sdb
+*.obj.dmp
+*.err
+
+# Important files that should NOT be ignored
+!firmware/MPLAB.X/dist/Default/production/MPLAB.X.production.mum
