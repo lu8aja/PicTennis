@@ -232,7 +232,7 @@ void main (void)
 	for (;;) {
         // Handle mode
         // Note: I have them inverted in the switch
-        m = (unsigned char) (MODE_Read1 * 2) + MODE_Read2;
+        m = (unsigned char) (MODE_Read1 << 1) & MODE_Read2;
         if (nMode != m){
             nMode = m;
             nBallHits = Ball_MaxHits + 1;
